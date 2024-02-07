@@ -74,8 +74,8 @@
 */
 
 # define BUT1_KEY 1
-# define BUT2_KEY 2
-# define BUT3_KEY 3
+# define BUT2_KEY 3
+# define BUT3_KEY
 # define SCROLLUP_KEY 4
 # define SCROLLDOWN_KEY 5
 # define SCROLLLEFT_KEY 6
@@ -89,47 +89,47 @@
 ** Letters keys
 */
 
-# define A_KEY 0
-# define B_KEY 11
-# define C_KEY 8
-# define D_KEY 2
-# define E_KEY 14
-# define F_KEY 3
-# define G_KEY 5
-# define H_KEY 4
-# define I_KEY 34
-# define J_KEY 38
-# define K_KEY 40
-# define L_KEY 37
-# define M_KEY 46
-# define N_KEY 45
-# define O_KEY 31
-# define P_KEY 35
-# define Q_KEY 12
-# define R_KEY 15
-# define S_KEY 1
-# define T_KEY 17
-# define U_KEY 32
-# define V_KEY 9
-# define W_KEY 13
-# define X_KEY 7
-# define Y_KEY 16
-# define Z_KEY 6
+# define A_KEY 113
+# define B_KEY 98
+# define C_KEY 99
+# define D_KEY 100
+# define E_KEY 101
+# define F_KEY 102
+# define G_KEY 103
+# define H_KEY 104
+# define I_KEY 105
+# define J_KEY 106
+# define K_KEY 107
+# define L_KEY 108
+# define M_KEY 44
+# define N_KEY 110
+# define O_KEY 111
+# define P_KEY 112
+# define Q_KEY 97
+# define R_KEY 114
+# define S_KEY 115
+# define T_KEY 116
+# define U_KEY 117
+# define V_KEY 118
+# define W_KEY 122
+# define X_KEY 120
+# define Y_KEY 121
+# define Z_KEY 119
 
 /*
 ** Numbers (not numeric keypad ones)
 */
 
-# define K1_KEY 18
-# define K2_KEY 19
-# define K3_KEY 20
-# define K4_KEY 21
-# define K5_KEY 23
-# define K6_KEY 22
-# define K7_KEY 26
-# define K8_KEY 28
-# define K9_KEY 25
-# define K0_KEY 29
+# define K1_KEY 38
+# define K2_KEY 233
+# define K3_KEY 34
+# define K4_KEY 39
+# define K5_KEY 40
+# define K6_KEY 45
+# define K7_KEY 232
+# define K8_KEY 95
+# define K9_KEY 231
+# define K0_KEY 224
 
 /*
 ** Special characters
@@ -149,8 +149,8 @@
 
 # define SP_KEY 49
 # define BQ_KEY 50
-# define MN_KEY 27
-# define PL_KEY 24
+# define MN_KEY 41
+# define PL_KEY 61
 # define SBO_KEY 33
 # define SBC_KEY 30
 # define BSL_KEY 42
@@ -189,10 +189,10 @@
 ** Arrow keys
 */
 
-# define UP_KEY 126
-# define DOWN_KEY 125
-# define RIGHT_KEY 124
-# define LEFT_KEY 123
+# define UP_KEY 65362
+# define DOWN_KEY 65364
+# define RIGHT_KEY 65363
+# define LEFT_KEY 65361
 
 /*
 ** Special keys
@@ -208,7 +208,7 @@
 ** CLR_KEY is the clear key
 */
 
-# define ESC_KEY 53
+# define ESC_KEY 65307
 # define TAB_KEY 48
 # define CL_KEY 272
 # define LSFT_KEY 257

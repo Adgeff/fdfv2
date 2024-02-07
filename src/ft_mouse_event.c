@@ -17,12 +17,12 @@ int			ft_buttonpress_event(int button, int x, int y, void *param)
 	t_env	*fdf;
 
 	fdf = param;
-	if ((button == 1 || button == 2) && x >= fdf->img.x && x < fdf->img.x +
+	if ((button == BUT1_KEY || button == BUT2_KEY) && x >= fdf->img.x && x < fdf->img.x +
 		fdf->img.x_size && y >= fdf->img.y && y < fdf->img.y + fdf->img.y_size)
 		fdf->cursor = (t_cursor){button, x, y};
-	else if (button == 4)
+	else if (button == SCROLLUP_KEY)
 		ft_zoomup(fdf);
-	else if (button == 5)
+	else if (button == SCROLLDOWN_KEY)
 		ft_zoomdown(fdf);
 	return (0);
 }
@@ -80,9 +80,9 @@ int			ft_motionnotify_event(int x, int y, void *param)
 	t_env	*fdf;
 
 	fdf = param;
-	if (fdf->cursor.button == 1)
+	if (fdf->cursor.button == BUT1_KEY)
 		ft_motionbutton1_event(x, y, fdf);
-	else if (fdf->cursor.button == 2)
+	else if (fdf->cursor.button == BUT2_KEY)
 	{
 		ft_motionbutton2_event(x, y, fdf);
 		ft_calc_rot(fdf);

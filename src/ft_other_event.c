@@ -53,7 +53,7 @@ int						ft_keypress_event(int keycode, void *param)
 	t_env				*fdf;
 	int					i;
 	static t_keypress	keypresstab[] =
-	{	{NKPL_KEY, &ft_zoomup}, {NKMN_KEY, &ft_zoomdown}, {UP_KEY, &ft_shiftup},
+	{	{PL_KEY, &ft_zoomup}, {MN_KEY, &ft_zoomdown}, {UP_KEY, &ft_shiftup},
 		{DOWN_KEY, &ft_shiftdown}, {LEFT_KEY, &ft_shiftleft},
 		{RIGHT_KEY, &ft_shiftright}, {W_KEY, &ft_rotxup}, {S_KEY, &ft_rotxdown},
 		{D_KEY, &ft_rotyup}, {A_KEY, &ft_rotydown}, {Q_KEY, &ft_rotzup},

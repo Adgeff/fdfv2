@@ -52,13 +52,13 @@ HEADERS		=	includes/fdf.h\
 
 LIB			=	libft/ minilibx/
 
-COMP		=	gcc -Wall -Wextra -Werror
+COMP		=	clang -Wall -Wextra -Werror
 
 all			:	$(NAME)
 
 $(NAME)		:	lib $(OBJ)
 	@$(COMP) $(addprefix -I , $(INC)) -o $(NAME) $(OBJ)\
-		libft/libft.a minilibx/libmlx.a -framework OpenGL -framework Appkit
+		libft/libft.a minilibx/libmlx.a -lm -lXext -lX11
 	@echo "\033[1;32m$(NAME) created !\033[0m"
 
 lib			:

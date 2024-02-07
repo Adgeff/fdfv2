@@ -14,13 +14,14 @@
 
 int				ft_clrpick_release_event(int button, int x, int y, void *param)
 {
+	(void)x;
+	(void)y;
+
 	t_clrpick	*clrpick;
 
 	clrpick = param;
 	if (button == clrpick->click.button)
 		clrpick->click.button = 0;
-	x = 0;
-	y = 0;
 	return (0);
 }
 
